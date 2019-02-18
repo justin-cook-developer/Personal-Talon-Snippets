@@ -20,11 +20,16 @@ def CursorText(s):
 
 # namespace snippets
 context.keymap({
+  # should not be here
+  'script come': [',', Key('space')],
   # UTILITY
   'script assign': ' = ',
+  'script (rest | spread)': '...',
+  'script structure': CursorText('{ {.} }'),
   'script require': CursorText('require({.})'),
   'script log': CursorText('console.log({.})'),
   'script log error': CursorText('console.error({.})'),
+  'script type': 'typeof',
   # MAIN LANGUAGE FEATURES
   'script funk': 'vanillaFunction',
   'script if': 'ifStatement',
@@ -35,15 +40,32 @@ context.keymap({
   'script while': 'whileLoop',
   'script for': 'forLoop',
   'script terneary': 'ternary',
+  # ES6 AND ES-NEXT FEATURES
+  'script import': 'importJS',
+  'script arrow': CursorText('({.}) => {}'),
+  'script class': 'vanillaClass',
+  'script class extends': 'vanillaClassExtends',
+  'script sync': 'async',
+  'script weight': 'await',
   # METHODS
   'script length': '.length',
   'script parse integer': CursorText('parseInt({.})'),
-  # STRING METHODS
+  # STRING PROTOTYPE METHODS
   'script uppercase': '.toUpperCase()',
   'script lowercase': '.toLowerCase()',
-  # ARRAY METHODS
+  # ARRAY PROTOTYPE METHODS
   'script pop': '.pop()',
   'script push': CursorText('.push({.})'),
   'script shift': '.shift()',
   'script on shift': CursorText('.unshift({.})'),
+  'script index': CursorText('.indexOf({.})'),
+  'script splice': CursorText('.splice({.})'),
+  'script slice': CursorText('.slice({.})'),
+  'script cat': CursorText('.concat({.})'),
+  'script filter': CursorText('.filter({.})'),
+  'script map': CursorText('.map({.})'),
+  'script reduce': CursorText('.reduce({.})'),
+  'script for each': CursorText('.forEach({.})'),
+  # OBJECT CLASS METHODS
+  'script keys': CursorText('Object.keys({.})'),
 })
