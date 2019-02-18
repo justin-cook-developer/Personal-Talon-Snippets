@@ -66,6 +66,11 @@ context.keymap({
   'script map': CursorText('.map({.})'),
   'script reduce': CursorText('.reduce({.})'),
   'script for each': CursorText('.forEach({.})'),
+  'script split': CursorText('.split(\'{.}\')'),
+  'script reverse': '.reverse()',
+  'script joint': CursorText('.join(\'{.}\')'),
+  'script sort': CursorText('.sort({.})'),
+  'script find': CursorText('.find({.})'),
   # OBJECT CLASS METHODS
   'script keys': CursorText('Object.keys({.})'),
 })
