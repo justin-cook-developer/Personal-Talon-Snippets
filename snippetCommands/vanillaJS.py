@@ -18,7 +18,7 @@ def CursorText(s):
     return [left + right, Key(' '.join(['left'] * len(right)))]
 
 
-# namespace snippets
+# namespace snippets for language features, namespace document for DOM features
 context.keymap({
   # should not be here
   'script come': [',', Key('space')],
@@ -54,6 +54,7 @@ context.keymap({
   # STRING PROTOTYPE METHODS
   'script uppercase': '.toUpperCase()',
   'script lowercase': '.toLowerCase()',
+  'script starts with': CursorText('.startsWith({.})'),
   # ARRAY PROTOTYPE METHODS
   'script pop': '.pop()',
   'script push': CursorText('.push({.})'),
@@ -75,9 +76,27 @@ context.keymap({
   'script joint': CursorText('.join(\'{.}\')'),
   'script sort': CursorText('.sort({.})'),
   'script find': CursorText('.find({.})'),
+  # ARRAY CLASS METHODS
+  'script from': CursorText('Array.from({.})'),
   # OBJECT CLASS METHODS
   'script keys': CursorText('Object.keys({.})'),
   'script entries': CursorText('Object.entries({.})'),
   'script values': CursorText('Object.values({.})'),
   'script create': CursorText('Object.create({.})'),
+  # DOM PROPERTIES
+  'document inner': '.innerHTML',
+  'document text': '.textContent',
+  'document eye text': '.innerText',
+  # DOM METHODS
+  'document idea jen': CursorText('document.getElementById({.})'),
+  'document idea': CursorText('.getElementById({.})'),
+  'document class jen': CursorText('document.getElementsByClassName({.})'),
+  'document class': CursorText('.getElementsByClassName({.})'),
+  'document query all jen': CursorText('.querySelectorAll({.})'),
+  'document query all': CursorText('.querySelectorAll({.})'),
+  'document query jen': CursorText('.querySelector({.})'),
+  'document query': CursorText('.querySelector({.})'),
+  'document tag jen': CursorText('document.getElementsByTagName({.})'),
+  'document tag': CursorText('.getElementsByTagName({.})'),
+  'document listen': CursorText('.addEventListener({.})'),
 })
