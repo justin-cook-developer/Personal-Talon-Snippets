@@ -5,7 +5,7 @@ from ....talon_community.utils import text, parse_words, parse_words_as_integer,
 def verifyExtension(app, win):
     return win.doc.endswith(".js")
 
-context = Context("javascriptDOM")
+context = Context("javascriptDOM", func=verifyExtension)
 
 def remove_spaces_around_dashes(m):
     words = parse_words(m)
@@ -25,6 +25,7 @@ context.keymap({
   'document eye text': '.innerText',
   # DOM ATTACHERS
   'document append': CursorText('.appendChild({.})'),
+  'document insert': CursorText('.insertBefore({.})'),
   # DOM CREATORS
   'document create element': CursorText('document.createElement({.})'),
   'document create text': CursorText('document.createTextNode({.})'),

@@ -5,7 +5,7 @@ from ....talon_community.utils import text, parse_words, parse_words_as_integer,
 def verifyExtension(app, win):
     return win.doc.endswith(".js") or win.doc.endswith(".jsx")
 
-context = Context("javascript")
+context = Context("javascriptPersonal", func=verifyExtension)
 
 def remove_spaces_around_dashes(m):
     words = parse_words(m)
@@ -23,7 +23,7 @@ context.keymap({
   # should not be here
   'script come': [',', Key('space')],
   # UTILITY
-  'script assign': ' = ',
+  'script sign': ' = ',
   'script (rest | spread)': '...',
   'script structure': CursorText('{ {.} }'),
   'script require': CursorText('require({.})'),
