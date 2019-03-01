@@ -5,7 +5,7 @@ from ....talon_community.utils import text, parse_words, parse_words_as_integer,
 def verifyExtension(app, win):
     return win.doc.endswith(".js") or win.doc.endswith(".jsx")
 
-context = Context("javascriptPersonal", func=verifyExtension)
+context = Context("javascriptPersonal")
 
 def remove_spaces_around_dashes(m):
     words = parse_words(m)
