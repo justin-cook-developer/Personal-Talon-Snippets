@@ -17,5 +17,5 @@ def CursorText(s):
 
 context.keymap({
   'desribe block': 'describeBlock',
-  'it block': 'itBlock',
+  'it block': CursorText('it(\'{.}\', function(){})'),
 })
