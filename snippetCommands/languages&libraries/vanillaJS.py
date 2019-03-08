@@ -45,6 +45,8 @@ context.keymap({
   'script arrow': CursorText('({.}) => {}'),
   'script class': 'vanillaClass',
   'script class extends': 'vanillaClassExtends',
+  'script promise': CursorText('new Promise((resolve, reject) => {({.})});'),
+  'script promise all': CursorText('Promise.all({.})'),
   # METHODS
   'script length': '.length',
   'script parse integer': CursorText('parseInt({.})'),
@@ -82,4 +84,8 @@ context.keymap({
   'script entries': CursorText('Object.entries({.})'),
   'script values': CursorText('Object.values({.})'),
   'script create': CursorText('Object.create({.})'),
+  # JSONMETHODS
+  'script jason': CursorText('JSON.parse({.})'),
+  'script jason string': CursorText('JSON.stringify({.})'),
 })
+
