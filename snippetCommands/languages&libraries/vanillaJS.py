@@ -23,12 +23,11 @@ context.keymap({
   # should not be here
   'script come': [',', Key('space')],
   # UTILITY
-  'script sign': ' = ',
   'script (rest | spread)': '...',
   'script structure': CursorText('{ {.} }'),
   'script require': CursorText('require({.})'),
   'script log': CursorText('console.log({.})'),
-  'script log error': CursorText('console.error({.})'),
+  'script log air': CursorText('console.error({.})'),
   'script type': 'typeof ',
   'script instance': 'instanceof',
   # MAIN LANGUAGE FEATURES
@@ -37,7 +36,7 @@ context.keymap({
   'script else': 'elseStatement',
   'script elif': 'ifElseStatement',
   'script switch': 'switchStatement',
-  'script case': 'caseStatement',
+  'script case': CursorText('case {.}:'),
   'script while': 'whileLoop',
   'script for': 'forLoop',
   'script terneary': 'ternary',
@@ -46,8 +45,6 @@ context.keymap({
   'script arrow': CursorText('({.}) => {}'),
   'script class': 'vanillaClass',
   'script class extends': 'vanillaClassExtends',
-  'script sync': 'async',
-  'script weight': 'await',
   # METHODS
   'script length': '.length',
   'script parse integer': CursorText('parseInt({.})'),
@@ -76,6 +73,8 @@ context.keymap({
   'script joint': CursorText('.join(\'{.}\')'),
   'script sort': CursorText('.sort({.})'),
   'script find': CursorText('.find({.})'),
+  'script then': CursorText('.then({.})'),
+  'script catch': CursorText('.catch({.})'),
   # ARRAY CLASS METHODS
   'script from': CursorText('Array.from({.})'),
   # OBJECT CLASS METHODS
