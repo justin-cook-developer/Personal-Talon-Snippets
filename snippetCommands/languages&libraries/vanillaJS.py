@@ -22,7 +22,7 @@ def CursorText(s):
 context.keymap({
   # should not be here
   'script come': [',', Key('space')],
-  'script block': [Key('space'), '{}', Key('left'), Key('enter')],
+  'my block': [Key('space'), '{}', Key('left'), Key('enter')],
   # UTILITY
   'script (rest | spread)': '...',
   'script structure': CursorText('{ {.} }'),
