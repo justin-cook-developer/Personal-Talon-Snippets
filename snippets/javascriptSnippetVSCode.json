@@ -1,0 +1,178 @@
+{
+	"Function": {
+		"prefix": "vanillaFunction",
+		"body": "function $1($2) {$3}",
+		"description": "Vanilla JavaScript function"
+	},
+	"Switch Statement": {
+		"prefix": "switchStatement",
+		"body": "switch($1) {$2}",
+		"description": "Switch statement"
+	},
+	"Case Statement": {
+		"prefix": "caseStatement",
+		"body": "case $1:",
+		"description": "Case statement"
+	},
+	"While Loop": {
+		"prefix": "whileLoop",
+		"body": "while($1) {$2}",
+		"description": "While loop"
+	},
+	"For Loop": {
+		"prefix": "forLoop",
+		"body": "for(let i = $1; i < $2; i++$3) {$4}",
+		"description": "For loop"
+	},
+	"Ternary": {
+		"prefix": "ternary",
+		"body": "$1 ? $2 : $3",
+		"description": "ternary operator"
+	},
+	"Import": {
+		"prefix": "importJS",
+		"body": "import $1 from '$2';",
+		"description": "JS import syntax"
+	},
+	"Class": {
+		"prefix": "vanillaClass",
+		"body": [
+			"class $1 {",
+			"\tconstructor($2) {",
+			"\t\t$3",
+			"\t}",
+			"}"
+		],
+		"description": "Javascript Class"
+	},
+	"Class Extends": {
+		"prefix": "vanillaClassExtends",
+		"body": [
+			"class $1 extends $2 {",
+			"\tconstructor($3) {",
+			"\t\tsuper($4);",
+			"\t\t$5",
+			"\t}",
+			"}"
+		],
+		"description": "Javascript Class"
+	},
+	"Describe Block": {
+		"prefix": "describeBlock",
+		"body": "describe('$1', function() {$2})",
+		"description": "Describe block for testing."
+	},
+	"Import db": {
+		"prefix": "ImportDB",
+		"body": "const Sequelize = require('sequelize');",
+		"description": "Import sequelize"
+	},
+	"DB Init": {
+		"prefix": "DBInit",
+		"body": [
+			"const db = new Sequelize(process.env.DATABASE_URL || `postgres://localhost:5432/$1`, {",
+			"\tlogging: false",
+			"});$2"
+		],
+		"description": "Initialize database connection"
+	},
+	"Import Express": {
+		"prefix": "ImportExpress",
+		"body": "const express = require('express');",
+		"description": "Import Express"
+	},
+	"Initialize Application": {
+		"prefix": "InitializeApplication",
+		"body": "const application = express();",
+		"description": "Initialize Application"
+	},
+	"Initialize Router": {
+		"prefix": "InitializeRouter",
+		"body": "const router = express.Router();",
+		"description": "Initialize Router"
+	},
+	"Express Router Use": {
+		"prefix": "ExpressRouterUse",
+		"body": "router.use($1);\n$2",
+		"description": "Router Middleware"
+	},
+	"Express App Use": {
+		"prefix": "ExpressApplicationUse",
+		"body": "application.use($1);\n$2",
+		"description": "Application Middleware"
+	},
+	"Express Route CB": {
+		"prefix": "ExpressRouteCb",
+		"body": [
+			"$1(request, response, next) => {",
+			"\ttry {",
+			"\t\t$2",
+			"\t} catch(e) {",
+			"\t\tnext(e);",
+			"\t}",
+			"}"
+		],
+		"description": "Basic cb for express route."
+	},
+	"Express Router Route": {
+		"prefix": "RouterRoute",
+		"body": [
+			"router.$1('/$2',$3 (request, response, next) => {",
+			"\ttry {",
+			"\t\t$4",
+			"\t} catch (e) {",
+			"\t\tnext(e);",
+			"\t}",
+			"});",
+			"$5"
+		],
+		"description": "Express Router Route"
+	},
+	"Express App Route": {
+		"prefix": "ApplicationRoute",
+		"body": [
+			"application.$1('/$2',$3 (request, response, next) => {",
+			"\ttry {",
+			"\t\t$4",
+			"\t} catch (e) {",
+			"\t\tnext(e);",
+			"\t}",
+			"});",
+			"$5"
+		],
+		"description": "Express Router Route"
+	},
+	"Redux Import": {
+		"prefix": "ImportRedux",
+		"body": "import { createStore, applyMiddleware } from 'redux';",
+		"description": "Import Redux"
+	},
+	"Redux Combine Reducers": {
+		"prefix": "ImportReducers",
+		"body": "import { combineReducers } from 'redux';",
+		"description": "Import Combine Reducers"
+	},
+	"Redux Logger": {
+		"prefix": "ImportLogger",
+		"body": "import logger from 'redux-logger';",
+		"description": "Import Redux Logger"
+	},
+	"Redux Thunk": {
+		"prefix": "ImportThunk",
+		"body": "import thunkMiddleware from 'redux-thunk';",
+		"description": "Import Redux Thunk"
+	},
+	"Redux Make Store": {
+		"prefix": "MakeStore",
+		"body": [
+			"export default createStore(",
+			"\trootReducer,",
+			"\tapplyMiddleware(",
+			"\t\tthunkMiddleware.withExtraArgument(axios),",
+			"\t\tlogger",
+			"\t)",
+			")"
+		],
+		"description": "Create The Store"
+	}
+}

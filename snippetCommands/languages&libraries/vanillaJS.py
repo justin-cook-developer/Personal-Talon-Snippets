@@ -22,6 +22,7 @@ def CursorText(s):
 context.keymap({
   # should not be here
   'script come': [',', Key('space')],
+  'script block': [Key('space'), '{}', Key('left'), Key('enter')],
   # UTILITY
   'script (rest | spread)': '...',
   'script structure': CursorText('{ {.} }'),
@@ -32,9 +33,6 @@ context.keymap({
   'script instance': 'instanceof',
   # MAIN LANGUAGE FEATURES
   'script funk': 'vanillaFunction',
-  'script if': 'ifStatement',
-  'script else': 'elseStatement',
-  'script elif': 'ifElseStatement',
   'script switch': 'switchStatement',
   'script case': CursorText('case {.}:'),
   'script while': 'whileLoop',
@@ -47,6 +45,7 @@ context.keymap({
   'script class extends': 'vanillaClassExtends',
   'script promise': CursorText('new Promise((resolve, reject) => {({.})});'),
   'script promise all': CursorText('Promise.all({.})'),
+  'script fetch': CursorText('fetch({.})'),
   # METHODS
   'script length': '.length',
   'script parse integer': CursorText('parseInt({.})'),

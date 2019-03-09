@@ -37,7 +37,7 @@ context.keymap({
   'document query all jen': CursorText('document.querySelectorAll({.})'),
   'document query all': CursorText('.querySelectorAll({.})'),
   'document query jen': CursorText('document.querySelector({.})'),
-  'document query': CursorText('.querySe9lector({.})'),
+  'document query': CursorText('.querySelector({.})'),
   'document tag jen': CursorText('document.getElementsByTagName({.})'),
   'document tag': CursorText('.getElementsByTagName({.})'),
   # EVENT LISTENER
