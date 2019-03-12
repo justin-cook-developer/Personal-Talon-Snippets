@@ -19,9 +19,12 @@ def CursorText(s):
 
 
 context.keymap({
+  # sketchy
+  'on click': 'onClick',
   'react import': 'import React from \'react\';\n',
-
+  'react component class': 'StatefulComponent',
   'react tag': ['< />', Key('left left left')],
-  'react clack': 'onClick',
-  'react component': ['React.Component ', Key('left')],
+  'react clack': ['onClick={}', Key('left')],
+  'react class': ['className=""', Key('left')],
+  'react state': ['this.setState({})', Key('left left left')],
 })
