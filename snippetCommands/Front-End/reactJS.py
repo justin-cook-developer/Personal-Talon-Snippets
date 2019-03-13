@@ -19,11 +19,17 @@ def CursorText(s):
 
 
 context.keymap({
-  'react import': CursorText('import React{.} from \'react\';'),
+  'react import': CursorText('import React, { PropTypes{.} } from \'react\';'),
   'react component class': 'StatefulComponent',
   'react tag': CursorText('<{.} />'),
   'react fragment': CursorText('<React.Fragment>{.}</React.Fragment>'),
   'react clack': 'onClick',
   'react class': ['className=""', Key('left')],
   'react state': ['this.setState({})', Key('left left')],
+  'react prop types': CursorText("{.}.propTypes = { _: PropTypes.func.isRequired }"),
+  'react defaults': CursorText('{.}.defaultProps = {  };'),
+  # LIFECYCLE
+  'react will mount': CursorText('componentWillMount() {{.}}'),
+  'react did mount': CursorText('componentDidMount() {{.}}'),
+  'react will unmount': CursorText('componentWillUnmount() {{.}}'),
 })

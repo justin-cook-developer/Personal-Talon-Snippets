@@ -42,4 +42,5 @@ context.keymap({
   'document tag': CursorText('.getElementsByTagName({.})'),
   # EVENT LISTENER
   'document listen': CursorText('.addEventListener({.})'),
+  'document listen remove': CursorText('.removeEventListener({.})'),
 })
