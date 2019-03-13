@@ -19,11 +19,11 @@ def CursorText(s):
 
 
 context.keymap({
-  'react document import': ["import ReactDOM from 'react-dom';", Key('enter')],
+  'react document import': CursorText("import ReactDOM{.} from 'react-dom';"),
 
-  'react document import hash': ["import {HashRouter as Router, Router, Link, NavLink} from 'react-router-dom';", Key('enter')],
+  'react document import hash': CursorText("import {HashRouter as Router, Router, Link, NavLink}{.} from 'react-router-dom';"),
 
-  'react document import browser': ["import {BrowserRouter as Router, Route, Link, NavLink, Switch} from 'react-router-dom';", Key('enter')],
+  'react document import browser':CursorText("import {BrowserRouter as Router, Route, Link, NavLink, Switch}{.} from 'react-router-dom';"),
 
   'react document render': ['ReactDOM.render()', Key('left')],
 })
