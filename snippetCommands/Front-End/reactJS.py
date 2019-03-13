@@ -22,6 +22,7 @@ context.keymap({
   'react import': CursorText('import React{.} from \'react\';'),
   'react component class': 'StatefulComponent',
   'react tag': CursorText('<{.} />'),
+  'react fragment': CursorText('<React.Fragment>{.}</React.Fragment>'),
   'react clack': 'onClick',
   'react class': ['className=""', Key('left')],
   'react state': ['this.setState({})', Key('left left')],
