@@ -20,10 +20,5 @@ def CursorText(s):
 
 context.keymap({
   'react document import': CursorText("import ReactDOM{.} from 'react-dom';"),
-
-  'react document import hash': CursorText("import {HashRouter as Router, Router, Link, NavLink}{.} from 'react-router-dom';"),
-
-  'react document import browser':CursorText("import {BrowserRouter as Router, Route, Link, NavLink, Switch}{.} from 'react-router-dom';"),
-
   'react document render': ['ReactDOM.render()', Key('left')],
 })
