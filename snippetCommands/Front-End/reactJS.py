@@ -25,7 +25,7 @@ context.keymap({
   'react fragment': CursorText('<React.Fragment>{.}</React.Fragment>'),
   'react clack': 'onClick',
   'react class': ['className=""', Key('left')],
-  'react state': ['this.setState({})', Key('left left')],
+  'react state': CursorText('this.setState((state) => ({{.}}))'),
   'react prop types': CursorText("{.}.propTypes = { _: PropTypes.func.isRequired }"),
   'react defaults': CursorText('{.}.defaultProps = {  };'),
   # LIFECYCLE
