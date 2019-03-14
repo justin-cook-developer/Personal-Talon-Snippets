@@ -174,5 +174,25 @@
 			")"
 		],
 		"description": "Create The Store"
+	},
+	"React State Component": {
+		"prefix": "StatefulComponent",
+		"body": [
+			"class $1 extends React.Component {$2",
+			"\trender($3) {",
+			"\t\treturn ($4);",
+			"\t}",
+			"}"
+		],
+		"description": "Stateful Component"
+	},
+	"React Stateless Component": {
+		"prefix": "StatelessComponent",
+		"body": [
+			"const $1 = (props$2) => {",
+			"\t return ($3);",
+			"}"
+		],
+		"description": "Stateless Component"
 	}
 }

@@ -1,0 +1,42 @@
+{
+	"Console Log": {
+		"prefix": "log",
+		"body": "console.log($1);",
+		"description": "Log output to console"
+	},
+	"Console Error": {
+		"prefix": "logE",
+		"body": "console.error($1);",
+		"description": "Log errors to console"
+	},
+	"Console Dir": {
+		"prefix": "logD",
+		"body": "console.dir($1);",
+		"description": "Log objects to console"
+	},
+	"React State Component": {
+		"prefix": "StatefulComponent",
+		"body": [
+			"class $1 extends React.Component {$2",
+			"\trender($3) {",
+			"\t\treturn ($4);",
+			"\t}",
+			"}"
+		],
+		"description": "Stateful Component"
+	},
+	"React Stateless Component": {
+		"prefix": "StatelessComponent",
+		"body": [
+			"const $1 = (props$2) => {",
+			"\t return ($3);",
+			"}"
+		],
+		"description": "Stateless Component"
+	},
+	"Import Provider": {
+		"prefix": "ImportProvider",
+		"body": "import { Provider } from 'react-redux';",
+		"description": "Import Provider"
+	}
+}
