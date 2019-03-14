@@ -24,10 +24,12 @@ context.keymap({
   'react component class': 'StatefulComponent',
   'react tag': CursorText('<{.} />'),
   'react fragment': CursorText('<React.Fragment>{.}</React.Fragment>'),
-  'react clack': 'onClick',
-  'react class': ['className=""', Key('left')],
   'react state': CursorText('this.setState({.})'),
   'react prop types': CursorText("{.}.propTypes = { _: PropTypes.func.isRequired }"),
+  # ATTRIBUTES
+  'react clack': ['onClick={}', Key('left')],
+  'react class': ['className=""', Key('left')],
+  'react for': ['htmlFor=""'], Key('left')],
   'react defaults': CursorText('{.}.defaultProps = {  };'),
   # LIFECYCLE
   'react will mount': CursorText('componentWillMount() {{.}}'),
