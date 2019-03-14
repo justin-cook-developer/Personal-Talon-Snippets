@@ -31,5 +31,6 @@ context.keymap({
   # LIFECYCLE
   'react will mount': CursorText('componentWillMount() {{.}}'),
   'react did mount': CursorText('componentDidMount() {{.}}'),
-  'react will unmount': CursorText('componentWillUnmount() {{.}}'),
+  'react unmount': CursorText('componentWillUnmount() {{.}}'),
+  'react update': CursorText('shouldComponentUpdate(nextProps, nextState) {{.}}'),
 })
