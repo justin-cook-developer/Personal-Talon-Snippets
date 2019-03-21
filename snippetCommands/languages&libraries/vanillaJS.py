@@ -46,6 +46,7 @@ context.keymap({
   'script promise': CursorText('new Promise((resolve, reject) => {({.})});'),
   'script promise all': CursorText('Promise.all({.})'),
   'script fetch': CursorText('fetch({.})'),
+  'script try': 'tryCatch',
   # METHODS
   'script length': '.length',
   'script parse integer': CursorText('parseInt({.})'),
