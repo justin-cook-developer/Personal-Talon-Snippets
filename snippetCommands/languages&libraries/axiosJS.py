@@ -25,4 +25,5 @@ context.keymap({
   'axe put': CursorText('axios.put({.})'),
   'axe delete': CursorText('axios.delete({.})'),
   'axe all': CursorText('axios.all([{.}])'),
+  'axe create': CursorText('axios.all({.})'),
 })

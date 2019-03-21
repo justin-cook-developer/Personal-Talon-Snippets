@@ -20,13 +20,14 @@ def CursorText(s):
 
 context.keymap({
   # IMPORTS
-  'router import hash': CursorText("import {HashRouter as Router, Router, Link, NavLink}{.} from 'react-router-dom';"),
-  'router import browser':CursorText("import {BrowserRouter as Router, Route, Link, NavLink, Switch}{.} from 'react-router-dom';"),
-  'router import nav link': CursorText("import { NavLink }{.} from 'react-router-dom';"),
+  'router import hash': CursorText("import { HashRouter as Router, Router, Link, NavLink }{.} from 'react-router-dom';"),
+  'router import browser':CursorText("import { BrowserRouter as Router, Route, Link, NavLink, Switch }{.} from 'react-router-dom';"),
+  'router import navigation': CursorText("import { NavLink }{.} from 'react-router-dom';"),
   'router import link': CursorText("import { Link }{.} from 'react-router-dom';"),
   # TAGS
   'router link': CursorText('<Link to= >{.}</Link>'),
-  'router nav link': CursorText('<NavLink to= >{.}</NavLink>'),
+  'router navigation': CursorText('<NavLink to="" >{.}</NavLink>'),
+  'router switch': CursorText('<Switch>{.}</Switch>'),
   # ATTRIBUTES
   'router path': ['path=""', Key('left')],
   'router exact': 'exact={true}',

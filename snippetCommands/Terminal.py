@@ -32,4 +32,5 @@ context.keymap({
   "node remove [<dgndictation>]": ["npm uninstall ", text],
   "node run": "npm start\n",
   "node run develop": "npm run start-dev",
+  "node init": "npm init -y",
 })
