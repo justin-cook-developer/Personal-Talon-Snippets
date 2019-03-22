@@ -5,8 +5,8 @@ from talon_init import TALON_HOME, TALON_PLUGINS, TALON_USER
 from talon import ctrl, ui
 import string
 
-from ...talon_community.utils import numerals, parse_words, text, is_in_bundles, insert
-from ...talon_community.bundle_groups import TERMINAL_BUNDLES
+from ..talon_community.utils import numerals, parse_words, text, is_in_bundles, insert
+from ..talon_community.bundle_groups import TERMINAL_BUNDLES
 
 context = Context("myTerminal", func=is_in_bundles(TERMINAL_BUNDLES))
 
