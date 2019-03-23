@@ -1,6 +1,5 @@
-from talon.voice import Context, Key, press
-import talon.clip as clip
-from ...talon_community.utils import text, parse_words, parse_words_as_integer, insert, word, join_words
+from talon.voice import Context, Key
+from ...talon_community.utils import parse_words, insert
 
 def verifyExtension(app, win):
     return win.doc.endswith(".js")
