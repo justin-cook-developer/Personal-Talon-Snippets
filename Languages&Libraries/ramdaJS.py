@@ -1,10 +1,8 @@
 from talon.voice import Context, Key
 from ...talon_community.utils import text, parse_words, insert
+from ..scopingFunctions import verifyFrontEndExtension
 
-def verifyExtension(app, win):
-    return win.doc.endswith(".js") or win.doc.endswith(".jsx")
-
-context = Context("ramda")
+context = Context("ramda", func=verifyFrontEndExtension)
 
 def remove_spaces_around_dashes(m):
     words = parse_words(m)
