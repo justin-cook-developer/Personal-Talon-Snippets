@@ -2,7 +2,7 @@ from talon.voice import Context, Key
 from ...talon_community.utils import parse_words, insert
 from ..scopingFunctions import verifyFrontEndExtension
 
-context = Context("ReactRouter", verifyFrontEndExtension)
+context = Context("ReactRouter", func=verifyFrontEndExtension)
 
 def remove_spaces_around_dashes(m):
     words = parse_words(m)

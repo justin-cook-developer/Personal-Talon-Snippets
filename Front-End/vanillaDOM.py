@@ -2,7 +2,7 @@ from talon.voice import Context, Key
 from ...talon_community.utils import parse_words, insert
 from ..scopingFunctions import verifyFrontEndExtension
 
-context = Context("javascriptDOM", verifyFrontEndExtension)
+context = Context("javascriptDOM", func=verifyFrontEndExtension)
 
 def remove_spaces_around_dashes(m):
     words = parse_words(m)
