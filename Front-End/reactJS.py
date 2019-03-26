@@ -32,5 +32,5 @@ context.keymap({
   'react will mount': CursorText('componentWillMount() {{.}}'),
   'react did mount': CursorText('componentDidMount() {{.}}'),
   'react unmount': CursorText('componentWillUnmount() {{.}}'),
-  'react update': CursorText('shouldComponentUpdate(nextProps, nextState) {{.}}'),
+  'react should update': CursorText('shouldComponentUpdate(nextProps, nextState) {{.}}'),
 })
