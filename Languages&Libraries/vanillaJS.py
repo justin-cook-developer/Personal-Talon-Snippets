@@ -81,6 +81,7 @@ context.keymap({
   'script entries': CursorText('Object.entries({.})'),
   'script values': CursorText('Object.values({.})'),
   'script create': CursorText('Object.create({.})'),
+  'script bind': CursorText('.bind({.})'),
   # JSONMETHODS
   'script jason': CursorText('JSON.parse({.})'),
   'script jason string': CursorText('JSON.stringify({.})'),

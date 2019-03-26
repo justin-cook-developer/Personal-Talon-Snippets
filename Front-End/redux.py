@@ -9,7 +9,7 @@ def remove_spaces_around_dashes(m):
     s = ' '.join(words)
     s = s.replace(' – ', '-')
     insert(s)
-
+ 
 def CursorText(s):
     left, right = s.split('{.}', 1)
     return [left + right, Key(' '.join(['left'] * len(right)))]
