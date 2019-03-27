@@ -9,7 +9,7 @@ def remove_spaces_around_dashes(m):
     s = ' '.join(words)
     s = s.replace(' – ', '-')
     insert(s)
- 
+
 def CursorText(s):
     left, right = s.split('{.}', 1)
     return [left + right, Key(' '.join(['left'] * len(right)))]
@@ -26,7 +26,7 @@ context.keymap({
   'duck import provider': 'import { Provider } from \'react-redux\';',
   'duck import connect': 'import { connect } from \'react-redux\';',
   'duck provider': CursorText('<Provider>{.}</Provider>'),
-  'duck map state': CursorText('mapStateToProps({.})'),
-  'duck map patch': CursorText('mapDispatchToProps({.})'),
+  'duck map state': 'mapStateToProps',
+  'duck map patch': 'mapDispatchToProps',
 })
 
