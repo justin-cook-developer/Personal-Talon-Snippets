@@ -28,5 +28,10 @@ context.keymap({
   'duck provider': CursorText('<Provider>{.}</Provider>'),
   'duck map state': 'mapStateToProps',
   'duck map patch': 'mapDispatchToProps',
+  # middleware snippets
+  'duck import think': "import thunkMiddleware from 'redux-thunk';",
+  'duck think': 'thunkMiddleware',
+  'duck import log': "import loggingMiddleware from 'redux-logger';",
+  'duck log': 'loggingMiddleware',
 })
 
