@@ -17,7 +17,8 @@ def CursorText(s):
 
 context.keymap({
   # redux snippets
-  'duck import': CursorText('import { createStore, combineReducers, applyMiddleware{.} } from \'redux\';'),
+  'duck import': CursorText('import { createStore, combineReducers, applyMiddleware, compose{.} } from \'redux\';'),
+  'duck enhancer': 'const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;',
   'duck store': CursorText('createStore({.})'),
   'duck combine': CursorText('combineReducers({.})'),
   'duck patch': CursorText('dispatch({.})'),
