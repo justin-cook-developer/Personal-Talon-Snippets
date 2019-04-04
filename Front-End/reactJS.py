@@ -25,8 +25,8 @@ context.keymap({
   'react prop types': CursorText("{.}.propTypes = { _: PropTypes.func.isRequired }"),
   # ATTRIBUTES
   'react clack': ['onClick={}', Key('left')],
-  'react class': ['className=""', Key('left')],
-  'react for': ['htmlFor=""', Key('left')],
+  'react class': ['className=\'\'', Key('left')],
+  'react for': ['htmlFor=\'\'', Key('left')],
   'react defaults': CursorText('{.}.defaultProps = {  };'),
   # LIFECYCLE
   'react will mount': CursorText('componentWillMount() {{.}}'),

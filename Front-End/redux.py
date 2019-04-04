@@ -34,5 +34,8 @@ context.keymap({
   'duck think': 'thunkMiddleware',
   'duck import log': "import loggingMiddleware from 'redux-logger';",
   'duck log': 'loggingMiddleware',
+  # redux form
+  'duck form red': 'import { reducer as formReducer } from \'redux-form\'',
+  'duck form import': 'import { Field, reduxForm } from \'redux-form\'',
 })
 
