@@ -22,13 +22,16 @@ context.keymap({
   'run seed': 'sequelize db:seed --seed ',
   'undo seed': 'sequelize db:seed:undo ',
   # npm commands
+  "node root": "npm root [-g]\n",
   "node install [<dgndictation>]": ["npm install ", text],
   "node install dev [<dgndictation>]": ["npm install --save-dev ", text],
   "node remove [<dgndictation>]": ["npm uninstall ", text],
+  "node remove dev [<dgndictation>]": ["npm uninstall --save-dev ", text],
   "node start": "npm start\n",
   "node run": "npm run ",
   "node run develop": "npm run start-dev",
   "node init": "npm init -y",
+  "node react app": "npx create-react-app ",
   # prettier
   "node prettier": "prettier --write ",
 })
